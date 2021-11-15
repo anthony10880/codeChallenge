@@ -1,5 +1,7 @@
 const findSum = function(array) {
-  // your code here - don't forget to return a number!
+  array.reduce(function(a, b) {
+    return a + b;
+  }, 0);
   
 };
 
