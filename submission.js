@@ -6,9 +6,9 @@ const findSum = function(array) {
     return total;
 };
 
-const findFrequency = function(array) {
+/*const findFrequency = function(array) {
   const notWorking;
-};
+};*/
 
 const isPalindrome = function(str) {
 let clean = (str) => str.toLowerCase();
@@ -30,7 +30,7 @@ let newString = str.replace(/ *\([^]*\) */g, '');
   return newString;
 };
 
-const scoreScrabble = function(str) {
+/*const scoreScrabble = function(str) {
   const notWorking;
   // your code here - don't forget to return a number!
-};
+};*/
