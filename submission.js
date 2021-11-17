@@ -19,7 +19,18 @@ let backwardsString = str.split('').reverse().join('');
 };
 
 const largestPair = function(array) {
-  // your code here - don't forget to return a number!
+let largestAdjProduct = array;
+  let x = 0;
+  let y = 0;
+  let w = Number.MIN_SAFE_INTEGER;
+  for (let i = 0; i < largestAdjProduct.length; i++) {
+    x = largestAdjProduct[i];
+    y = largestAdjProduct[i + 1];
+    if (x * y > w) {
+      w = x * y;
+    };
+  }
+  return w;
 };
 
 const removeParenth = function(str) {
