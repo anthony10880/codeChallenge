@@ -7,7 +7,7 @@ const findSum = function(array) {
 };
 
 const findFrequency = function(array) {
-  
+  const notWorking;
 };
 
 const isPalindrome = function(str) {
@@ -31,5 +31,6 @@ let newString = str.replace(/ *\([^]*\) */g, '');
 };
 
 const scoreScrabble = function(str) {
+  const notWorking;
   // your code here - don't forget to return a number!
 };
