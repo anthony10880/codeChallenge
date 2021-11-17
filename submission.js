@@ -1,8 +1,9 @@
 const findSum = function(array) {
-  let sum = array.reduce(function(a, b) {
-    return a + b;
-  }, 0);
-  return sum;
+  let total = 0;
+    for (let i = 0; i < array.length; i++) {
+        total += array[i];
+    }
+    return total;
 };
 
 const findFrequency = function(array) {
@@ -10,27 +11,18 @@ const findFrequency = function(array) {
 };
 
 const isPalindrome = function(str) {
-let backwardsString = str.split('').reverse().join('');
-  if (str === backwardsString) {
-    return true;
-  } else {
-    return false;
-  }
+let clean = (str) => str.toLowerCase();
+  let goodStr = clean(str);
+  let reverseStr = goodStr.split('').reverse().join('');
+  return reverseStr === goodStr;
 };
 
 const largestPair = function(array) {
-let largestAdjProduct = array;
-  let x = 0;
-  let y = 0;
-  let w = Number.MIN_SAFE_INTEGER;
-  for (let i = 0; i < largestAdjProduct.length; i++) {
-    x = largestAdjProduct[i];
-    y = largestAdjProduct[i + 1];
-    if (x * y > w) {
-      w = x * y;
-    };
-  }
-  return w;
+let max=-Infinity;  
+    for (let i=0;i<array.length-1;i++){
+        max = array[i]*array[i+1]>max ?array[i]*array[i+1]:max;  
+    }
+    return max;
 };
 
 const removeParenth = function(str) {
